@@ -1,0 +1,88 @@
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estilo para a tela de fundo */
+.background {
+    position: fixed; /* Posição fixa para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/2.2.png'); /* URL da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Define a ordem de empilhamento atrás de outros elementos */
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto; /* Centraliza o contêiner na tela horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80vh;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+
+/* Estilo para o quadro que exibirá as imagens */
+.frame {
+    border: 2px solid #ffffff; /* Borda branca */
+    box-sizing: border-box;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o quadro */
+    width: 100%; /* Largura máxima do quadro */
+    height: 100%; /* Altura máxima do quadro */
+    max-width: 100%; /* Garante que o quadro se ajuste ao tamanho do contêiner */
+    max-height: 100%; /* Garante que o quadro se ajuste ao tamanho do contêiner */
+}
+
+/* Estilo para a imagem dentro do quadro */
+.frame img {
+    width: 100%; /* Preenche completamente o quadro */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo da imagem */
+    transition: opacity 0.5s ease; /* Efeito de transição suave na opacidade */
+}
+
+/* Estilo para a imagem dentro do quadro quando houver hover */
+.frame img:hover {
+    opacity: 0.8; /* Reduz a opacidade da imagem quando houver hover */
+}
+
+
+
+/* Media query para ajustar o layout para telas menores (por exemplo, tablets e celulares) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Reduz a largura do contêiner para 90% da largura da tela */
+    }
+}
+
+
+/* Estilo para o campo de texto */
+.text-field,
+input[type="text"] {
+    margin-top: 16px; /* Adiciona uma margem de 16px acima do campo de texto */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box;
+    border: none; /* Remove a borda padrão */
+    border-radius: 0; /* Remove o arredondamento da borda */
+    background-color: transparent; /* Define o fundo transparente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100%; /* Define a largura como 100% */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    color: black !important; /* Define a cor do texto como preto */
+    white-space: normal; /* Permite que o texto quebre para a próxima linha */
+}
+
