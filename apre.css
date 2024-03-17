@@ -80,6 +80,6 @@ input[type="text"] {
     width: 100%; /* Define a largura como 100% */
     font-size: 16px; /* Define o tamanho da fonte como 16px */
     color: black !important; /* Define a cor do texto como preto */
-    white-space: normal; /* Permite que o texto quebre para a próxima linha */
+    white-space: pre-wrap; /* Permite que o texto quebre para a próxima linha */
 }
 
