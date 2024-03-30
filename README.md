@@ -9,8 +9,7 @@
     <a href="#-Tecnologias">🌐 Tecnologias</a>
 </div>
 
-<img alt="projeto DevLinks" scr=".github/preview.jpg"
-width="100%"
+ <img src="./assets/preview.jpg"
 
 ## **💻 Projeto**
 
